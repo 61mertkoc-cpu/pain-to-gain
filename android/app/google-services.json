@@ -1,0 +1,98 @@
+{
+  "project_info": {
+    "project_number": "262025946620",
+    "project_id": "pain-to-gain-new",
+    "storage_bucket": "pain-to-gain-new.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262025946620:android:b9e42d6fa8d5264efe3e79",
+        "android_client_info": {
+          "package_name": "com.mertkoc.paintogain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262025946620-vc7ag1mr20lru21vmirh0n6k69n4p6bj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mertkoc.paintogain",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "262025946620-upjvpsa544blb7pe547c4k3f7ukg7ith.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9T1VVP8IqbJ0CsHjnstq1bzbROLuLtBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262025946620-upjvpsa544blb7pe547c4k3f7ukg7ith.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262025946620-kgv3qhso8ighg28kupclq77surn0pih3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.paintogain"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:262025946620:android:5e723616db929ae1fe3e79",
+        "android_client_info": {
+          "package_name": "com.mycompany.paintogain"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "262025946620-k4dnddlk64og6ond93f71e0uqjrg77ck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.mycompany.paintogain",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "262025946620-upjvpsa544blb7pe547c4k3f7ukg7ith.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9T1VVP8IqbJ0CsHjnstq1bzbROLuLtBw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "262025946620-upjvpsa544blb7pe547c4k3f7ukg7ith.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "262025946620-kgv3qhso8ighg28kupclq77surn0pih3.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.paintogain"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
