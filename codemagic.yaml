@@ -1,6 +1,9 @@
 workflows:
   ios-release:
     name: iOS Release
+    triggering:
+      events:
+        - push
     integrations:
       app_store_connect: Codemagic
     instance_type: mac_mini_m2
