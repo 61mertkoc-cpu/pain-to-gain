@@ -15,6 +15,7 @@ import 'package:flutter/scheduler.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
 import 'home_page_model.dart';
+import '/onboarding_page/onboarding_page_widget.dart';
 import '/backend/habit_logger.dart';
 import '/backend/localization_manager.dart';
 import '/backend/quotes_repository.dart';
