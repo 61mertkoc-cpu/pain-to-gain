@@ -1,6 +1,8 @@
 workflows:
   ios-release:
     name: iOS Release
+    integrations:
+      app_store_connect: Codemagic
     instance_type: mac_mini_m2
     environment:
       flutter: default
