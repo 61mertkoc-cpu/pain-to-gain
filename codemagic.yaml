@@ -1,17 +1,20 @@
 workflows:
   ios-release:
     name: iOS Release
-    triggering:
-      events:
-        - push
     integrations:
       app_store_connect: Codemagic
     instance_type: mac_mini_m2
     environment:
-      flutter: 3.19.6
+    flutter: stable
       xcode: latest
       cocoapods: default
     scripts:
+        - name: Disable Swift Package Manager
+      script: |
+        flutter config --no-enable-swift-package-manager
+    - name: Get Flutter packages
+      script: |
+        flutter pub get
       - name: Set up keychain
         script: |
           keychain initialize
