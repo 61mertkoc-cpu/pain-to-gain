@@ -7,7 +7,7 @@ workflows:
     environment:
       groups:
         - code-signing
-      flutter: stable
+      flutter: 3.41.8
       xcode: latest
       cocoapods: default
     scripts:
