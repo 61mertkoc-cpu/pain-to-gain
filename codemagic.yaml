@@ -5,6 +5,8 @@ workflows:
       app_store_connect: Codemagic
     instance_type: mac_mini_m2
     environment:
+      groups:
+        - code-signing
       flutter: stable
       xcode: latest
       cocoapods: default
