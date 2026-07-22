@@ -11,9 +11,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'goals_page_model.dart';
-import '/backend/habit_logger.dart';
 import '/backend/localization_manager.dart';
+import '/backend/habit_logger.dart';
+import '/components/pain_to_gain_bottom_nav_widget.dart';
+import 'goals_page_model.dart';
 export 'goals_page_model.dart';
 
 class GoalsPageWidget extends StatefulWidget {
@@ -242,171 +243,11 @@ class _GoalsPageWidgetState extends State<GoalsPageWidget> {
                 // Bottom Navigation
                 Align(
                   alignment: AlignmentDirectional(0.0, 1.0),
-                  child: Padding(
-                    padding: EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 0.0),
-                    child: Container(
-                      width: double.infinity,
-                      height: 70.0,
-                      decoration: BoxDecoration(),
-                      child: Container(
-                        width: double.infinity,
-                        height: double.infinity,
-                        child: Stack(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.asset(
-                                'assets/images/paintogain_nav_1_clean.png',
-                                width: double.infinity,
-                                height: double.infinity,
-                                fit: BoxFit.fill,
-                              ),
-                            ),
-                            Positioned.fill(
-                              child: Row(
-                                mainAxisSize: MainAxisSize.max,
-                                children: [
-                                  Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.goNamed(HomePageWidget.routeName);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            LocalizationManager.instance.t('nav_home'),
-                                            textAlign: TextAlign.center,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.inter(
-                                              color: Color(0x88F2EFE9),
-                                              fontSize: 10.0,
-                                              fontWeight: FontWeight.bold,
-                                              letterSpacing: 0.5,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.goNamed(GoalsPageWidget.routeName);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            LocalizationManager.instance.t('nav_goals'),
-                                            textAlign: TextAlign.center,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.inter(
-                                              color: Color(0xFFA68255),
-                                              fontSize: 10.0,
-                                              fontWeight: FontWeight.bold,
-                                              letterSpacing: 0.5,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.goNamed(StatisticsPageWidget.routeName);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            LocalizationManager.instance.t('nav_stats'),
-                                            textAlign: TextAlign.center,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.inter(
-                                              color: Color(0x88F2EFE9),
-                                              fontSize: 10.0,
-                                              fontWeight: FontWeight.bold,
-                                              letterSpacing: 0.5,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.pushNamed(JourneyPageWidget.routeName);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            LocalizationManager.instance.t('nav_journey'),
-                                            textAlign: TextAlign.center,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.inter(
-                                              color: Color(0x88F2EFE9),
-                                              fontSize: 10.0,
-                                              fontWeight: FontWeight.bold,
-                                              letterSpacing: 0.5,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                  Expanded(
-                                    child: InkWell(
-                                      splashColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        context.goNamed(SettingsPageWidget.routeName);
-                                      },
-                                      child: Column(
-                                        mainAxisAlignment: MainAxisAlignment.end,
-                                        children: [
-                                          Text(
-                                            LocalizationManager.instance.t('nav_settings'),
-                                            textAlign: TextAlign.center,
-                                            maxLines: 1,
-                                            overflow: TextOverflow.ellipsis,
-                                            style: GoogleFonts.inter(
-                                              color: Color(0x88F2EFE9),
-                                              fontSize: 10.0,
-                                              fontWeight: FontWeight.bold,
-                                              letterSpacing: 0.5,
-                                            ),
-                                          ),
-                                          SizedBox(height: 10.0),
-                                        ],
-                                      ),
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                  child: wrapWithModel(
+                    model: _model.painToGainBottomNavModel,
+                    updateCallback: () => safeSetState(() {}),
+                    child: PainToGainBottomNavWidget(
+                      activeTab: 1,
                     ),
                   ),
                 ),

@@ -7,6 +7,7 @@ import '/flutter_flow/flutter_flow_widgets.dart';
 import '/flutter_flow/form_field_controller.dart';
 import 'dart:ui';
 import '/index.dart';
+import '/components/pain_to_gain_bottom_nav_widget.dart';
 import 'goals_page_widget.dart' show GoalsPageWidget;
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
@@ -26,6 +27,8 @@ class GoalsPageModel extends FlutterFlowModel<GoalsPageWidget> {
 
   ///  State fields for stateful widgets in this page.
 
+  late PainToGainBottomNavModel painToGainBottomNavModel;
+
   // State field(s) for TextField widget.
   FocusNode? textFieldFocusNode1;
   TextEditingController? textController1;
@@ -41,10 +44,13 @@ class GoalsPageModel extends FlutterFlowModel<GoalsPageWidget> {
   bool? switchValue;
 
   @override
-  void initState(BuildContext context) {}
+  void initState(BuildContext context) {
+    painToGainBottomNavModel = createModel(context, () => PainToGainBottomNavModel());
+  }
 
   @override
   void dispose() {
+    painToGainBottomNavModel.dispose();
     textFieldFocusNode1?.dispose();
     textController1?.dispose();
 

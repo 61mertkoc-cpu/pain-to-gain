@@ -884,25 +884,18 @@ class _HomePageWidgetState extends State<HomePageWidget> {
                           ),
                         ),
                       ),
-                      wrapWithModel(
-                        model: _model.painToGainBottomNavModel,
-                        updateCallback: () => safeSetState(() {}),
-                        child: PainToGainBottomNavWidget(
-                          activeTab: 0,
-                        ),
-                      ),
-                      if (_isBannerAdLoaded && _bannerAd != null && currentUserDocument?.isPremium != true)
-                        Container(
-                          width: double.infinity,
-                          height: _bannerAd!.size.height.toDouble(),
-                          alignment: Alignment.center,
-                          child: Container(
-                            width: _bannerAd!.size.width.toDouble(),
-                            height: _bannerAd!.size.height.toDouble(),
-                            child: AdWidget(ad: _bannerAd!),
-                          ),
-                        ),
+                      SizedBox(height: 90.0),
                     ],
+                  ),
+                ),
+              ),
+              Align(
+                alignment: AlignmentDirectional(0.0, 1.0),
+                child: wrapWithModel(
+                  model: _model.painToGainBottomNavModel,
+                  updateCallback: () => safeSetState(() {}),
+                  child: PainToGainBottomNavWidget(
+                    activeTab: 0,
                   ),
                 ),
               ),

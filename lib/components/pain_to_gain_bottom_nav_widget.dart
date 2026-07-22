@@ -66,7 +66,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                     'assets/images/paintogain_nav_0_clean.png',
                     width: double.infinity,
                     height: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               if (widget!.activeTab == 1)
@@ -76,7 +76,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                     'assets/images/paintogain_nav_1_clean.png',
                     width: double.infinity,
                     height: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               if (widget!.activeTab == 2)
@@ -86,7 +86,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                     'assets/images/paintogain_nav_2_clean.png',
                     width: double.infinity,
                     height: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               if (widget!.activeTab == 3)
@@ -96,7 +96,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                     'assets/images/paintogain_nav_3_clean.png',
                     width: double.infinity,
                     height: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               if (widget!.activeTab == 4)
@@ -106,7 +106,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                     'assets/images/paintogain_nav_4_clean.png',
                     width: double.infinity,
                     height: double.infinity,
-                    fit: BoxFit.cover,
+                    fit: BoxFit.fill,
                   ),
                 ),
               // Full-height tap areas + localized labels
@@ -204,7 +204,7 @@ class _PainToGainBottomNavWidgetState extends State<PainToGainBottomNavWidget> {
                         highlightColor: Colors.transparent,
                         onTap: () async {
                           AdManager.showInterstitialAdIfAppropriate();
-                          context.pushNamed(JourneyPageWidget.routeName);
+                          context.goNamed(JourneyPageWidget.routeName);
                         },
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.end,

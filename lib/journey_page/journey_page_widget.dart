@@ -330,15 +330,11 @@ class _JourneyPageWidgetState extends State<JourneyPageWidget> {
                     ),
                     Align(
                       alignment: AlignmentDirectional(0.0, 1.0),
-                      child: Padding(
-                        padding:
-                            EdgeInsetsDirectional.fromSTEB(6.0, 4.0, 6.0, 0.0),
-                        child: wrapWithModel(
-                          model: _model.painToGainBottomNavModel,
-                          updateCallback: () => safeSetState(() {}),
-                          child: PainToGainBottomNavWidget(
-                            activeTab: 3,
-                          ),
+                      child: wrapWithModel(
+                        model: _model.painToGainBottomNavModel,
+                        updateCallback: () => safeSetState(() {}),
+                        child: PainToGainBottomNavWidget(
+                          activeTab: 3,
                         ),
                       ),
                     ),
