@@ -1,4 +1,5 @@
 // Export pages
+export '/pages/splash_screen_widget.dart' show SplashScreenWidget;
 export '/pages/welcome_page/welcome_page_widget.dart' show WelcomePageWidget;
 export '/onboarding_page/onboarding_page_widget.dart' show OnboardingPageWidget;
 export '/onboarding_page2/onboarding_page2_widget.dart'

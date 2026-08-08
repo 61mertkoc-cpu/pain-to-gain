@@ -91,9 +91,12 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
         FFRoute(
           name: '_initialize',
           path: '/',
-          builder: (context, _) => appStateNotifier.loggedIn
-              ? HomePageWidget()
-              : OnboardingPage2Widget(),
+          builder: (context, _) => const SplashScreenWidget(),
+        ),
+        FFRoute(
+          name: SplashScreenWidget.routeName,
+          path: SplashScreenWidget.routePath,
+          builder: (context, params) => const SplashScreenWidget(),
         ),
         FFRoute(
           name: WelcomePageWidget.routeName,

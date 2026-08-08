@@ -20,7 +20,11 @@ class NotificationService {
     "Zaman akıp gidiyor! Rütbeni kaybetmemek için hemen arenaya dön ve gücünü kanıtla.",
     "Bahane üretme, tarih yaz! Bugünkü hedeflerini tamamlayarak gücüne güç kat.",
     "Gölgelerde saklanma vakti bitti. Kılıcını çek ve bugünkü görevleri bitir!",
-    "Disiplin ateşin sönmek üzere! Onu tekrar harlamak için uygulamaya gir."
+    "Disiplin ateşin sönmek üzere! Onu tekrar harlamak için uygulamaya gir.",
+    "Mazeretler zayıfların sığınağıdır. Savaşçı, hedeflerini yok etmek için bugün ne yaptın?",
+    "Zirvedekiler acıyı kucaklayanlardır. Bugünün antrenmanını tamamlamayı unutma!",
+    "Zafer çaba ister! Hemen uygulamaya gir ve bugünkü serini uzat.",
+    "Her tamamlanan görev seni efsaneye bir adım daha yaklaştırır."
   ];
 
   static const List<String> _companionMessages = [
@@ -28,7 +32,9 @@ class NotificationService {
     "{name} seni arenada bekliyor. Onu yalnız bırakma, bugünkü mücadeleyi birlikte kazanın!",
     "Efsanevi yoldaşın {name}'nin sana ihtiyacı var. Geri dön ve gücünüzü herkese gösterin.",
     "{name} bugün kılıç seslerini duymadı... Arenaya in ve onunla omuz omuza savaş!",
-    "Büyük komutanların yoldaşları asla yalnız kalmaz. {name}'nin yanına git ve hedeflerini yok et."
+    "Büyük komutanların yoldaşları asla yalnız kalmaz. {name}'nin yanına git ve hedeflerini yok et.",
+    "Sadık yoldaşın {name} kalkanını hazırladı. Zafere giden yolda ona liderlik et!",
+    "{name} ile birlikte kurduğunuz seri bozulmasın! Bugünün hedeflerini hemen bitirin."
   ];
 
   Future<void> init() async {

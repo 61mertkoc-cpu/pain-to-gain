@@ -171,17 +171,22 @@ class HabitLogger {
         batch.update(userRef, {'habit_history': history});
       }
 
-      // Check for 34 hours passed since last completed date
+      // Increment streak count on daily login / app open
+      int currentStreak = userData['streak_count'] as int? ?? 0;
+      int newStreak = currentStreak + 1;
+      
+      // If last login was more than 1 day ago (e.g. 2 days without opening app), reset streak to 1
       if (lastCompletedDate != null) {
-        final hoursDiff = DateTime.now().difference(lastCompletedDate).inHours;
-        if (hoursDiff >= 34) {
-          final currentStreak = userData['streak_count'] as int? ?? 0;
-          final newStreak = _getBaseStreakLevel(currentStreak);
-          batch.update(userRef, {'streak_count': newStreak});
+        final daysDiff = todayDate.difference(lastCompletedDate).inDays;
+        if (daysDiff > 1) {
+          newStreak = 1;
         }
       }
 
-      batch.update(userRef, {'last_completed_date': todayDate});
+      batch.update(userRef, {
+        'last_completed_date': todayDate,
+        'streak_count': newStreak,
+      });
 
       await batch.commit();
     }

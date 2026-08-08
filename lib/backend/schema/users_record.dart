@@ -48,7 +48,7 @@ class UsersRecord extends FirestoreRecord {
 
   // "streak_count" field.
   int? _streakCount;
-  int get streakCount => 365; // SS ALMAK İÇİN BU SAYIYI DEĞİŞTİRİP HOT RELOAD AT!
+  int get streakCount => _streakCount ?? 0;
   bool hasStreakCount() => _streakCount != null;
 
   // "longest_streak" field.
@@ -63,7 +63,7 @@ class UsersRecord extends FirestoreRecord {
 
   // "is_premium" field.
   bool? _isPremium;
-  bool get isPremium => true; // FORCE PREMIUM FOR NO ADS
+  bool get isPremium => _isPremium ?? false;
   bool hasIsPremium() => _isPremium != null;
 
   // "total_completed_days" field.

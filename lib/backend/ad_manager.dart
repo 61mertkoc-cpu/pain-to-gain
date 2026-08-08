@@ -4,7 +4,9 @@ import 'package:google_mobile_ads/google_mobile_ads.dart';
 import '/auth/firebase_auth/auth_util.dart';
 
 class AdManager {
-  static const int interstitialFrequency = 3; // Show ad every 3 actions
+  // Test sürümünde tüm reklamlar kapalı (Geliştirici kontrolü)
+  static const bool enableAds = false; 
+  static const int interstitialFrequency = 7; // İleride açıldığında 7 işlemde bir gösterilecek
   static int _actionCount = 0;
   
   static InterstitialAd? _interstitialAd;
@@ -74,6 +76,7 @@ class AdManager {
 
   // Use this method whenever a user performs a major navigation or action
   static void showInterstitialAdIfAppropriate() {
+    if (!enableAds) return;
     if (kIsWeb) return;
     if (currentUserDocument?.isPremium == true) return;
 
