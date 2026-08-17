@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 
 class StatisticsPageModel extends FlutterFlowModel {
   // Model state variables
-  DateTime selectedMonth = DateTime(2026, 7, 1); // Default to July 2026 as per designs
+  DateTime selectedMonth = DateTime(DateTime.now().year, DateTime.now().month, 1); // Default to July 2026 as per designs
 
   // Bottom navigation model
   late PainToGainBottomNavModel painToGainBottomNavModel;

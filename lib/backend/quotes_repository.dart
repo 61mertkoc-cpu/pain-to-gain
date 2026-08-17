@@ -1,4 +1,4 @@
-﻿class Quote {
+class Quote {
   final Map<String, String> localizedText;
   final String author;
   const Quote({required this.localizedText, required this.author});
@@ -9,7 +9,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'Değişim, rahatlığın bittiği yerde başlar.',
+      'tr': 'Değişim, konfor alanının bittiği yerde başlar.',
       'en': 'Change begins where comfort ends.',
       'de': 'Veränderung beginnt, wo die Komfortzone endet.',
       'es': 'El cambio comienza donde termina la comodidad.',
@@ -19,7 +19,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Sokrates',
     localizedText: {
-      'tr': 'Düşmekten korkma, yeniden kalkamamaktan kork.',
+      'tr': 'Düşmekten değil, düştüğün yerde kalmaktan kork.',
       'en': 'Do not fear falling, fear not being able to rise again.',
       'de': 'Fürchte dich nicht vor dem Fallen, sondern davor, nicht wieder aufstehen zu können.',
       'es': 'No temas caer, teme no poder volver a levantarte.',
@@ -29,7 +29,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'Zihninin üzerindeki güce sahipsin, dış olayların değil.',
+      'tr': 'Gücün dış olaylarda değil, kendi zihnindedir.',
       'en': 'You have power over your mind, not outside events.',
       'de': 'Du hast die Macht über deinen Geist, nicht über äußere Ereignisse.',
       'es': 'Tienes poder sobre tu mente, no sobre los eventos externos.',
@@ -39,7 +39,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Bugün, dünkü kendini yendiğin gündür.',
+      'tr': 'Bugün, dünkü kendini yeneceğin gündür.',
       'en': 'Today is the day you conquer your yesterday\'s self.',
       'de': 'Heute ist der Tag, an dem du dein gestriges Ich besiegst.',
       'es': 'Hoy es el día en que conquistas a tu yo de ayer.',
@@ -49,7 +49,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'Zorluk yaşamayan, kendini kanıtlayamaz.',
+      'tr': 'Zorluk görmeyen insan kendini kanıtlayamaz.',
       'en': 'He who has not experienced difficulty cannot prove himself.',
       'de': 'Wer keine Schwierigkeiten erlebt hat, kann sich nicht beweisen.',
       'es': 'Quien no ha experimentado dificultades no puede probarse a sí mismo.',
@@ -59,7 +59,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Machiavelli',
     localizedText: {
-      'tr': 'İrade büyükse, zorluklar büyük kalamaz.',
+      'tr': 'İrade güçlüyse, zorluklar küçük kalır.',
       'en': 'Where the will is great, the difficulties cannot be great.',
       'de': 'Wo der Wille groß ist, können die Schwierigkeiten nicht groß sein.',
       'es': 'Donde la voluntad es grande, las dificultades no pueden ser grandes.',
@@ -79,7 +79,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Sun Tzu',
     localizedText: {
-      'tr': 'Kazanmak önce zihninde başlar.',
+      'tr': 'Zafere giden yol önce zihinde kazanılır.',
       'en': 'Winning begins in the mind first.',
       'de': 'Gewinnen beginnt zuerst im Kopf.',
       'es': 'Ganar comienza primero en la mente.',
@@ -89,7 +89,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'İyi insanı anlatma; iyi biri ol.',
+      'tr': 'İyi bir insanın nasıl olması gerektiğini tartışma; öyle biri ol.',
       'en': 'Do not talk about what a good man should be; be one.',
       'de': 'Sprich nicht darüber, was ein guter Mensch sein sollte; sei einer.',
       'es': 'No hables sobre lo que debe ser un buen hombre; sé uno.',
@@ -99,7 +99,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'Hafif acılar konuşur, büyük acılar dilsizdir.',
+      'tr': 'Hafif acılar dile gelir, derin acılar dilsizdir.',
       'en': 'Light griefs are loquacious, but the great are dumb.',
       'de': 'Leichte Schmerzen sprechen, große Schmerzen sind stumm.',
       'es': 'Los dolores leves hablan, los grandes son mudos.',
@@ -109,7 +109,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Her şeyde kararlılık, hiçbir şeyde tereddüt etmemektir.',
+      'tr': 'Kararlılık, hiçbir konuda tereddüt etmemektir.',
       'en': 'Determination in all things is hesitating in nothing.',
       'de': 'Entschlossenheit in allem bedeutet, in nichts zu zögern.',
       'es': 'Determinación en todas las cosas es no dudar en nada.',
@@ -119,7 +119,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'İnsanı olaylar değil, düşünceleri sarsar.',
+      'tr': 'İnsanları sarsan olaylar değil, olaylara yükledikleri anlamlardır.',
       'en': 'People are not disturbed by things, but by the views they take of things.',
       'de': 'Menschen werden nicht durch die Dinge beunruhigt, sondern durch ihre Sicht auf die Dinge.',
       'es': 'A los hombres no les perturban las cosas, sino la visión que tienen de ellas.',
@@ -139,7 +139,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Konfüçyüs',
     localizedText: {
-      'tr': 'En büyük zafer düşmemekte değil, her düştüğümüzde ayağa kalkmaktadır.',
+      'tr': 'En büyük zafer hiç düşmemek değil, her düştüğünde yeniden kalkabilmektir.',
       'en': 'Our greatest glory is not in never falling, but in rising every time we fall.',
       'de': 'Unser größter Ruhm liegt nicht darin, niemals zu fallen, sondern jedes Mal wieder aufzustehen.',
       'es': 'Nuestra mayor gloria no está en no caer nunca, sino en levantarnos cada vez que caemos.',
@@ -159,7 +159,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Büyük İskender',
     localizedText: {
-      'tr': 'Deneyenler için imkansız diye bir şey yoktur.',
+      'tr': 'Cesaretle deneyen biri için imkansız diye bir şey yoktur.',
       'en': 'There is nothing impossible to him who will try.',
       'de': 'Es gibt nichts Unmögliches für den, der es versucht.',
       'es': 'No hay nada imposible para el que lo intenta.',
@@ -169,7 +169,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Jül Sezar',
     localizedText: {
-      'tr': 'Korkaklar ölümlerinden önce birçok kez ölür, cesurlar ise ölümü bir kez tadar.',
+      'tr': 'Korkaklar ölmeden önce defalarca ölür; cesurlar ise ölümü yalnızca bir kez tadar.',
       'en': 'Cowards die many times before their deaths; the valiant never taste of death but once.',
       'de': 'Feiglinge sterben viele Male vor ihrem Tod; die Tapferen schmecken den Tod nur einmal.',
       'es': 'Los cobardes mueren muchas veces antes de su muerte; los valientes nunca prueban la muerte más de una vez.',
@@ -179,7 +179,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Laozi',
     localizedText: {
-      'tr': 'Başkalarına hükmeden güçlüdür, kendine hükmeden ise yenilmez.',
+      'tr': 'Başka insanlara hükmeden güçlüdür; kendine hükmeden ise yenilmezdir.',
       'en': 'He who controls others may be powerful, but he who has mastered himself is mightier still.',
       'de': 'Wer andere kontrolliert, mag mächtig sein, aber wer sich selbst beherrscht, ist noch mächtiger.',
       'es': 'Quien controla a los demás puede ser poderoso, pero quien se ha dominado a sí mismo es aún más poderoso.',
@@ -189,7 +189,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Winston Churchill',
     localizedText: {
-      'tr': 'Başarı son değildir, başarısızlık ölümcül değildir; devam etme cesaretidir önemli olan.',
+      'tr': 'Başarı nihai değildir, başarısızlık da ölümcül değildir; asıl önemli olan devam etme cesaretidir.',
       'en': 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
       'de': 'Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Was zählt, ist der Mut weiterzumachen.',
       'es': 'El éxito no es final, el fracaso no es fatal: es el coraje de continuar lo que cuenta.',
@@ -199,7 +199,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Albert Camus',
     localizedText: {
-      'tr': 'Kışın en derin vaktinde içimde yenilmez bir yaz olduğunu öğrendim.',
+      'tr': 'Kışın en dondurucu anında, içimde yenilmez bir yaz olduğunu keşfettim.',
       'en': 'In the depth of winter, I finally learned that within me there lay an invincible summer.',
       'de': 'In der Tiefe des Winters erfuhr ich schließlich, dass in mir ein unbesiegbarer Sommer liegt.',
       'es': 'En las profundidades del invierno finalmente aprendí que en mi interior habitaba un verano invencible.',
@@ -259,7 +259,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Musashi Miyamoto',
     localizedText: {
-      'tr': 'Görmek ayrıdır, algılamak ayrı.',
+      'tr': 'Sadece gözle görmek zayıflıktır; zihinle algılamak ise güçtür.',
       'en': 'Perception is strong and sight weak.',
       'de': 'Wahrnehmung ist stark, das Sehen schwach.',
       'es': 'La percepción es fuerte, la vista es débil.',
@@ -299,7 +299,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Theodore Roosevelt',
     localizedText: {
-      'tr': 'Sıkıntı çekmemiş bir adamı kimse takdir etmez.',
+      'tr': 'Tarih boyunca rahat bir hayat süren hiç kimse, hatırlanmaya değer bir iz bırakmamıştır.',
       'en': 'Never throughout history has a man who lived a life of ease left a name worth remembering.',
       'de': 'Niemals in der Geschichte hat ein Mann, der ein Leben in Leichtigkeit führte, einen Namen hinterlassen, an den man sich erinnert.',
       'es': 'Nunca en la historia un hombre que vivió una vida de facilidad dejó un nombre digno de recordar.',
@@ -329,7 +329,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Vince Lombardi',
     localizedText: {
-      'tr': 'Mükemmellik ulaşılamazdır, ancak mükemmelliği kovalarken yakalayabileceğimiz şey başarıdır.',
+      'tr': 'Kusursuzluk ulaşılamaz olabilir; fakat kusursuzluğun peşinden koşarken mükemmelliği yakalarız.',
       'en': 'Perfection is not attainable, but if we chase perfection we can catch excellence.',
       'de': 'Perfektion ist nicht erreichbar, aber wenn wir der Perfektion nachjagen, können wir Exzellenz fangen.',
       'es': 'La perfección no es alcanzable, pero si perseguimos la perfección podemos atrapar la excelencia.',
@@ -429,7 +429,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Carl Jung',
     localizedText: {
-      'tr': 'Ben bana olana değil, olmayı seçtiğim kişiye dönüşürüm.',
+      'tr': 'Ben başıma gelenlerin eseri değil, olmayı seçtiğim kişiyim.',
       'en': 'I am not what happened to me, I am what I choose to become.',
       'de': 'Ich bin nicht das, was mir passiert ist, ich bin das, was ich wähle zu werden.',
       'es': 'No soy lo que me pasó, soy lo que elijo llegar a ser.',
@@ -459,7 +459,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'David Goggins',
     localizedText: {
-      'tr': 'Zihninin %40\'ına ulaştığında, daha yeni başlıyorsun.',
+      'tr': 'Zihnin pes ettiğini söylediğinde, aslında kapasitenin sadece %40'ındasın.\'ına ulaştığında, daha yeni başlıyorsun.',
       'en': 'When your mind is telling you you\'re done, you\'re really only 40 percent done.',
       'de': 'Wenn dein Verstand dir sagt, du bist am Ende, hast du erst 40 Prozent erreicht.',
       'es': 'Cuando tu mente te dice que has terminado, en realidad solo has completado el 40 por ciento.',
@@ -641,7 +641,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Yüzleşmediğin korkuların sınırlarını belirler.',
+      'tr': 'Yüzleşmediğin korkular, sınırlarını çizer.',
       'en': 'The fears you don\'t face set your limits.',
       'de': 'Die Ängste, denen du dich nicht stellst, setzen deine Grenzen.',
       'es': 'Los miedos que no enfrentas establecen tus límites.',
@@ -791,7 +791,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Ağrı, kaslarından ayrılan tembelliğin feryadıdır.',
+      'tr': 'Hissettiğin acı, bedenini terk eden zayıflığın sesidir.',
       'en': 'Pain is the cry of laziness leaving your muscles.',
       'de': 'Schmerz ist der Schrei der Faulheit, die deine Muskeln verlässt.',
       'es': 'El dolor es el grito de la pereza abandonando tus músculos.',
@@ -1361,7 +1361,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Zihnini ustalaştır, aksi takdirde o sana ustalık taslar.',
+      'tr': 'Zihnine sen hükmet, yoksa o sana hükmeder.',
       'en': 'Master your mind, or it will master you.',
       'de': 'Beherrsche deinen Geist, oder er wird dich beherrschen.',
       'es': 'Domina tu mente, o ella te dominará a ti.',
@@ -1451,7 +1451,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Hiçbir şey için pişmanlık duyma.',
+      'tr': 'Gereksiz ve faydasız hiçbir şey yapma.',
       'en': 'Do nothing that is of no use.',
       'de': 'Tue nichts, was keinen Nutzen hat.',
       'es': 'No hagas nada que no sea de utilidad.',
@@ -1471,7 +1471,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Muhammed Ali',
     localizedText: {
-      'tr': 'Eğer benimle dövüşmeyi hayal ediyorsan, uyanıp özür dilemelisin.',
+      'tr': 'Beni yenmeyi rüyanda bile görüyorsan, uyanıp hemen özür dilesen iyi edersin.',
       'en': 'If you even dream of beating me you\'d better wake up and apologize.',
       'de': 'Wenn du auch nur davon träumst, mich zu schlagen, solltest du besser aufwachen und dich entschuldigen.',
       'es': 'Si siquiera sueñas con vencerme, será mejor que despiertes y te disculpes.',
@@ -1481,7 +1481,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Mükemmelliği arama, gelişimi ara.',
+      'tr': 'Kusursuzluğu değil, gelişimi hedefle.',
       'en': 'Don\'t seek perfection, seek progress.',
       'de': 'Suche nicht nach Perfektion, suche nach Fortschritt.',
       'es': 'No busques la perfección, busca el progreso.',
@@ -1491,7 +1491,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'Eğer bir adam hangi limana yelken açtığını bilmiyorsa, hiçbir rüzgar onun için doğru rüzgar değildir.',
+      'tr': 'Hangi limana yelken açtığını bilmeyen kaptana hiçbir rüzgardan fayda gelmez.',
       'en': 'If a man knows not to which port he sails, no wind is favorable.',
       'de': 'Wenn ein Mann nicht weiß, welchen Hafen er ansteuert, ist kein Wind günstig.',
       'es': 'Si un hombre no sabe a qué puerto navega, ningún viento es favorable.',
@@ -1602,59 +1602,59 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'YaptÄ±ÄŸÄ±n her iÅŸte karakterini ortaya koy.',
+      'tr': 'Yaptığın her işte karakterini ortaya koy.',
       'en': 'Demonstrate your character in everything you do.',
       'de': 'Zeige deinen Charakter in allem, was du tust.',
-      'es': 'Demuestra tu carÃ¡cter en todo lo que haces.',
-      'fr': 'Fais preuve de caractÃ¨re dans tout ce que tu fais.',
+      'es': 'Demuestra tu carácter en todo lo que haces.',
+      'fr': 'Fais preuve de caractère dans tout ce que tu fais.',
     },
   ),
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'Sabah kalktÄ±ÄŸÄ±nda yaÅŸamanÄ±n, dÃ¼ÅŸÃ¼nmenin ve sevmenin ne bÃ¼yÃ¼k bir ayrÄ±calÄ±k olduÄŸunu dÃ¼ÅŸÃ¼n.',
+      'tr': 'Sabah kalktığında yaşamanın, düşünmenin ve sevmenin ne büyük bir ayrıcalık olduğunu düşün.',
       'en': 'When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love.',
-      'de': 'Wenn du morgens aufstehst, denke daran, was fÃ¼r ein Privileg es ist, zu leben, zu denken, zu genieÃŸen, zu lieben.',
-      'es': 'Al levantarte por la maÃ±ana, piensa en quÃ© privilegio es estar vivo, pensar, disfrutar, amar.',
-      'fr': 'Le matin, quand tu te lÃ¨ves, pense au privilÃ¨ge d''Ãªtre en vie, de penser, de jouir, d''aimer.',
+      'de': 'Wenn du morgens aufstehst, denke daran, was für ein Privileg es ist, zu leben, zu denken, zu genießen, zu lieben.',
+      'es': 'Al levantarte por la mañana, piensa en qué privilegio es estar vivo, pensar, disfrutar, amar.',
+      'fr': 'Le matin, quand tu te lèves, pense au privilège d''être en vie, de penser, de jouir, d''aimer.',
     },
   ),
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'Zorluklar zihni gÃ¼Ã§lendirir, tÄ±pkÄ± Ã§alÄ±ÅŸmanÄ±n bedeni gÃ¼Ã§lendirdiÄŸi gibi.',
+      'tr': 'Zorluklar zihni güçlendirir, tıpkı çalışmanın bedeni güçlendirdiği gibi.',
       'en': 'Difficulties strengthen the mind, as labor does the body.',
-      'de': 'Schwierigkeiten stÃ¤rken den Geist, so wie Arbeit den KÃ¶rper stÃ¤rkt.',
+      'de': 'Schwierigkeiten stärken den Geist, so wie Arbeit den Körper stärkt.',
       'es': 'Las dificultades fortalecen la mente, como el trabajo lo hace con el cuerpo.',
-      'fr': 'Les difficultÃ©s fortifient l''esprit, comme le travail fortifie le corps.',
+      'fr': 'Les difficultés fortifient l''esprit, comme le travail fortifie le corps.',
     },
   ),
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Bir yolu iyice kavrarsan, binbir yolu da kavrarsÄ±n.',
+      'tr': 'Bir yolu iyice kavrarsan, binbir yolu da kavrarsın.',
       'en': 'If you know the way broadly, you will see it in all things.',
-      'de': 'Wenn du den Weg im GroÃŸen kennst, wirst du ihn in allen Dingen sehen.',
-      'es': 'Si conoces el camino ampliamente, lo verÃ¡s en todas las cosas.',
+      'de': 'Wenn du den Weg im Großen kennst, wirst du ihn in allen Dingen sehen.',
+      'es': 'Si conoces el camino ampliamente, lo verás en todas las cosas.',
       'fr': 'Si tu connais la voie dans son ensemble, tu la verras en toute chose.',
     },
   ),
   Quote(
     author: 'Sun Tzu',
     localizedText: {
-      'tr': 'Kriz anÄ±, fÄ±rsatÄ±n doruk noktasÄ±dÄ±r.',
+      'tr': 'Kriz anı, fırsatın doruk noktasıdır.',
       'en': 'In the midst of chaos, there is also opportunity.',
       'de': 'Mitten im Chaos liegt auch eine Chance.',
-      'es': 'En medio del caos, tambiÃ©n hay oportunidad.',
-      'fr': 'Au milieu du chaos, il y a aussi une opportunitÃ©.',
+      'es': 'En medio del caos, también hay oportunidad.',
+      'fr': 'Au milieu du chaos, il y a aussi une opportunité.',
     },
   ),
   Quote(
     author: 'Alexander the Great',
     localizedText: {
-      'tr': 'Ã‡abalamaktan korkmayanlar iÃ§in imkansÄ±z diye bir ÅŸey yoktur.',
+      'tr': 'Çabalamaktan korkmayanlar için imkansız diye bir şey yoktur.',
       'en': 'There is nothing impossible to him who will try.',
-      'de': 'Es gibt nichts UnmÃ¶gliches fÃ¼r denjenigen, der es versucht.',
+      'de': 'Es gibt nichts Unmögliches für denjenigen, der es versucht.',
       'es': 'No hay nada imposible para quien lo intenta.',
       'fr': 'Il n''y a rien d''impossible pour celui qui essaie.',
     },
@@ -1662,57 +1662,57 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Julius Caesar',
     localizedText: {
-      'tr': 'Geldim, gÃ¶rdÃ¼m, yendim.',
+      'tr': 'Geldim, gördüm, yendim.',
       'en': 'I came, I saw, I conquered.',
       'de': 'Ich kam, ich sah, ich siegte.',
-      'es': 'LleguÃ©, vi, vencÃ­.',
+      'es': 'Llegué, vi, vencí.',
       'fr': 'Je suis venu, j''ai vu, j''ai vaincu.',
     },
   ),
   Quote(
     author: 'Aristoteles',
     localizedText: {
-      'tr': 'Biz tekrar tekrar yaptÄ±ÄŸÄ±mÄ±z ÅŸeyiz. MÃ¼kemmellik bir eylem deÄŸil, bir alÄ±ÅŸkanlÄ±ktÄ±r.',
+      'tr': 'Biz tekrar tekrar yaptığımız şeyiz. Mükemmellik bir eylem değil, bir alışkanlıktır.',
       'en': 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
-      'de': 'Wir sind das, was wir wiederholt tun. VorzÃ¼glichkeit ist also keine Handlung, sondern eine Gewohnheit.',
-      'es': 'Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hÃ¡bito.',
-      'fr': 'Nous sommes ce que nous rÃ©pÃ©tons chaque jour. L''excellence n''est donc pas un acte, mais une habitude.',
+      'de': 'Wir sind das, was wir wiederholt tun. Vorzüglichkeit ist also keine Handlung, sondern eine Gewohnheit.',
+      'es': 'Somos lo que hacemos repetidamente. La excelencia, entonces, no es un acto, sino un hábito.',
+      'fr': 'Nous sommes ce que nous répétons chaque jour. L''excellence n''est donc pas un acte, mais une habitude.',
     },
   ),
   Quote(
     author: 'Bruce Lee',
     localizedText: {
-      'tr': 'Kolay bir hayat dilemeyin, zor olana dayanacak gÃ¼Ã§ dileyin.',
+      'tr': 'Kolay bir hayat dilemeyin, zor olana dayanacak güç dileyin.',
       'en': 'Do not pray for an easy life, pray for the strength to endure a difficult one.',
-      'de': 'Bete nicht fÃ¼r ein einfaches Leben, bete fÃ¼r die Kraft, ein schweres zu ertragen.',
-      'es': 'No pidas una vida fÃ¡cil, pide la fuerza para soportar una difÃ­cil.',
+      'de': 'Bete nicht für ein einfaches Leben, bete für die Kraft, ein schweres zu ertragen.',
+      'es': 'No pidas una vida fácil, pide la fuerza para soportar una difícil.',
       'fr': 'Ne prie pas pour une vie facile, prie pour avoir la force d''en endurer une difficile.',
     },
   ),
   Quote(
     author: 'Winston Churchill',
     localizedText: {
-      'tr': 'BaÅŸarÄ± nihai deÄŸildir, baÅŸarÄ±sÄ±zlÄ±k Ã¶lÃ¼mcÃ¼l deÄŸildir; Ã¶nemli olan devam etme cesaretidir.',
+      'tr': 'Başarı nihai değildir, başarısızlık ölümcül değildir; önemli olan devam etme cesaretidir.',
       'en': 'Success is not final, failure is not fatal: it is the courage to continue that counts.',
-      'de': 'Erfolg ist nicht endgÃ¼ltig, Misserfolg ist nicht fatal: Es ist der Mut weiterzumachen, der zÃ¤hlt.',
-      'es': 'El Ã©xito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar.',
-      'fr': 'Le succÃ¨s n''est pas final, l''Ã©chec n''est pas fatal : c''est le courage de continuer qui compte.',
+      'de': 'Erfolg ist nicht endgültig, Misserfolg ist nicht fatal: Es ist der Mut weiterzumachen, der zählt.',
+      'es': 'El éxito no es definitivo, el fracaso no es fatal: lo que cuenta es el valor para continuar.',
+      'fr': 'Le succès n''est pas final, l''échec n''est pas fatal : c''est le courage de continuer qui compte.',
     },
   ),
   Quote(
     author: 'Theodore Roosevelt',
     localizedText: {
-      'tr': 'YapabileceÄŸine inan, yolun yarÄ±sÄ±nÄ± katetmiÅŸ olursun.',
+      'tr': 'Yapabileceğine inan, yolun yarısını katetmiş olursun.',
       'en': 'Believe you can and you''re halfway there.',
       'de': 'Glaube daran, dass du es kannst, und du hast den halben Weg geschafft.',
-      'es': 'Cree que puedes y ya estÃ¡s a medio camino.',
-      'fr': 'Crois que tu en es capable et tu es dÃ©jÃ  Ã  mi-chemin.',
+      'es': 'Cree que puedes y ya estás a medio camino.',
+      'fr': 'Crois que tu en es capable et tu es déjà à mi-chemin.',
     },
   ),
   Quote(
     author: 'Lao Tzu',
     localizedText: {
-      'tr': 'Bin millik bir yolculuk tek bir adÄ±mla baÅŸlar.',
+      'tr': 'Bin millik bir yolculuk tek bir adımla başlar.',
       'en': 'A journey of a thousand miles begins with a single step.',
       'de': 'Eine Reise von tausend Meilen beginnt mit einem einzigen Schritt.',
       'es': 'Un viaje de mil millas comienza con un solo paso.',
@@ -1722,27 +1722,27 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Friedrich Nietzsche',
     localizedText: {
-      'tr': 'YaÅŸamak iÃ§in bir nedeni olan, her tÃ¼rlÃ¼ nasÄ±la katlanabilir.',
+      'tr': 'Yaşamak için bir nedeni olan, her türlü nasıla katlanabilir.',
       'en': 'He who has a why to live can bear almost any how.',
-      'de': 'Wer ein Wozu zum Leben hat, ertrÃ¤gt fast jedes Wie.',
-      'es': 'Quien tiene un porquÃ© para vivir se puede enfrentar a todos los cÃ³mos.',
+      'de': 'Wer ein Wozu zum Leben hat, erträgt fast jedes Wie.',
+      'es': 'Quien tiene un porqué para vivir se puede enfrentar a todos los cómos.',
       'fr': 'Celui qui a un pourquoi vivre peut supporter n''importe quel comment.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'BugÃ¼n ter dÃ¶k, yarÄ±n zaferin tadÄ±nÄ± Ã§Ä±kar.',
+      'tr': 'Bugün ter dök, yarın zaferin tadını çıkar.',
       'en': 'Sweat today, enjoy your victory tomorrow.',
-      'de': 'Schwitze heute, genieÃŸe morgen deinen Sieg.',
-      'es': 'Suda hoy, disfruta tu victoria maÃ±ana.',
+      'de': 'Schwitze heute, genieße morgen deinen Sieg.',
+      'es': 'Suda hoy, disfruta tu victoria mañana.',
       'fr': 'Transpire aujourd''hui, savoure ta victoire demain.',
     },
   ),
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'Sadece eÄŸitimli olanlar Ã¶zgÃ¼rdÃ¼r.',
+      'tr': 'Sadece eğitimli olanlar özgürdür.',
       'en': 'Only the educated are free.',
       'de': 'Nur die Gebildeten sind frei.',
       'es': 'Solo los educados son libres.',
@@ -1752,119 +1752,119 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'Engeller yolun kendisidir. Eylemin Ã¶nÃ¼ndeki engel, eylemi ilerletir.',
+      'tr': 'Engeller yolun kendisidir. Eylemin önündeki engel, eylemi ilerletir.',
       'en': 'The impediment to action advances action. What stands in the way becomes the way.',
-      'de': 'Das Hindernis fÃ¼r das Handeln fÃ¶rdert das Handeln. Was im Weg steht, wird zum Weg.',
-      'es': 'El impedimento a la acciÃ³n avanza la acciÃ³n. Lo que se interpone en el camino se convierte en el camino.',
-      'fr': 'L''obstacle Ã  l''action avance l''action. Ce qui se dresse sur le chemin devient le chemin.',
+      'de': 'Das Hindernis für das Handeln fördert das Handeln. Was im Weg steht, wird zum Weg.',
+      'es': 'El impedimento a la acción avanza la acción. Lo que se interpone en el camino se convierte en el camino.',
+      'fr': 'L''obstacle à l''action avance l''action. Ce qui se dresse sur le chemin devient le chemin.',
     },
   ),
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'Talih, hazÄ±rlÄ±klÄ± zihinlerle karÅŸÄ±laÅŸÄ±nca ÅŸans adÄ±nÄ± alÄ±r.',
+      'tr': 'Talih, hazırlıklı zihinlerle karşılaşınca şans adını alır.',
       'en': 'Luck is what happens when preparation meets opportunity.',
-      'de': 'GlÃ¼ck ist das, was passiert, wenn Vorbereitung auf Gelegenheit trifft.',
-      'es': 'La suerte es lo que ocurre cuando la preparaciÃ³n se encuentra con la oportunidad.',
-      'fr': 'La chance, c''est ce qui arrive quand la prÃ©paration rencontre l''opportunitÃ©.',
+      'de': 'Glück ist das, was passiert, wenn Vorbereitung auf Gelegenheit trifft.',
+      'es': 'La suerte es lo que ocurre cuando la preparación se encuentra con la oportunidad.',
+      'fr': 'La chance, c''est ce qui arrive quand la préparation rencontre l''opportunité.',
     },
   ),
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'HÄ±zlÄ± olmak yavaÅŸlamamaktÄ±r. DÃ¼zenli adÄ±m atan asla geride kalmaz.',
+      'tr': 'Hızlı olmak yavaşlamamaktır. Düzenli adım atan asla geride kalmaz.',
       'en': 'To be fast is not to rush. The steady step never falls behind.',
-      'de': 'Schnell zu sein bedeutet nicht zu hetzen. Der stetige Schritt bleibt nie zurÃ¼ck.',
-      'es': 'Ser rÃ¡pido no es apresurarse. El paso constante nunca se queda atrÃ¡s.',
-      'fr': 'ÃŠtre rapide ne veut pas dire se prÃ©cipiter. Le pas rÃ©gulier ne reste jamais en arriÃ¨re.',
+      'de': 'Schnell zu sein bedeutet nicht zu hetzen. Der stetige Schritt bleibt nie zurück.',
+      'es': 'Ser rápido no es apresurarse. El paso constante nunca se queda atrás.',
+      'fr': 'Être rapide ne veut pas dire se précipiter. Le pas régulier ne reste jamais en arrière.',
     },
   ),
   Quote(
     author: 'Sun Tzu',
     localizedText: {
-      'tr': 'SavaÅŸmadan kazanmak en bÃ¼yÃ¼k zaferdir.',
+      'tr': 'Savaşmadan kazanmak en büyük zaferdir.',
       'en': 'The supreme art of war is to subdue the enemy without fighting.',
-      'de': 'Die hÃ¶chste Kunst des Krieges ist es, den Feind ohne Kampf zu besiegen.',
+      'de': 'Die höchste Kunst des Krieges ist es, den Feind ohne Kampf zu besiegen.',
       'es': 'El supremo arte de la guerra es someter al enemigo sin luchar.',
-      'fr': 'L''art suprÃªme de la guerre est de soumettre l''ennemi sans combattre.',
+      'fr': 'L''art suprême de la guerre est de soumettre l''ennemi sans combattre.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'AcÄ± geÃ§icidir, ama vazgeÃ§menin piÅŸmanlÄ±ÄŸÄ± sonsuza dek sÃ¼rer.',
+      'tr': 'Acı geçicidir, ama vazgeçmenin pişmanlığı sonsuza dek sürer.',
       'en': 'Pain is temporary, but the regret of quitting lasts forever.',
-      'de': 'Schmerz ist vorÃ¼bergehend, aber das Bedauern aufzugeben hÃ¤lt ewig an.',
+      'de': 'Schmerz ist vorübergehend, aber das Bedauern aufzugeben hält ewig an.',
       'es': 'El dolor es temporal, pero el arrepentimiento de rendirse dura para siempre.',
-      'fr': 'La douleur est temporaire, mais le regret d''avoir abandonnÃ© dure toujours.',
+      'fr': 'La douleur est temporaire, mais le regret d''avoir abandonné dure toujours.',
     },
   ),
   Quote(
     author: 'Platon',
     localizedText: {
-      'tr': 'Ä°lk ve en bÃ¼yÃ¼k zafer, kendini fethetmektir.',
+      'tr': 'İlk ve en büyük zafer, kendini fethetmektir.',
       'en': 'The first and greatest victory is to conquer yourself.',
-      'de': 'Der erste und grÃ¶ÃŸte Sieg ist es, sich selbst zu besiegen.',
+      'de': 'Der erste und größte Sieg ist es, sich selbst zu besiegen.',
       'es': 'La primera y mayor victoria es conquistarte a ti mismo.',
-      'fr': 'La premiÃ¨re et la plus grande des victoires est de se vaincre soi-mÃªme.',
+      'fr': 'La première et la plus grande des victoires est de se vaincre soi-même.',
     },
   ),
   Quote(
     author: 'Sokrates',
     localizedText: {
-      'tr': 'SorgulanmamÄ±ÅŸ bir hayat yaÅŸanmaya deÄŸmez.',
+      'tr': 'Sorgulanmamış bir hayat yaşanmaya değmez.',
       'en': 'The unexamined life is not worth living.',
       'de': 'Ein unhinterfragtes Leben ist nicht lebenswert.',
       'es': 'Una vida sin examen no vale la pena ser vivida.',
-      'fr': 'Une vie sans examen ne vaut pas la peine d''Ãªtre vÃ©cue.',
+      'fr': 'Une vie sans examen ne vaut pas la peine d''être vécue.',
     },
   ),
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'Ne yaÅŸandÄ±ÄŸÄ± deÄŸil, ona nasÄ±l tepki verdiÄŸin Ã¶nemlidir.',
+      'tr': 'Ne yaşandığı değil, ona nasıl tepki verdiğin önemlidir.',
       'en': 'It''s not what happens to you, but how you react to it that matters.',
       'de': 'Es kommt nicht darauf an, was dir passiert, sondern wie du darauf reagierst.',
-      'es': 'No importa lo que te sucede, sino cÃ³mo reaccionas ante ello.',
-      'fr': 'Ce n''est pas ce qui vous arrive, mais la faÃ§on dont vous y rÃ©agissez qui importe.',
+      'es': 'No importa lo que te sucede, sino cómo reaccionas ante ello.',
+      'fr': 'Ce n''est pas ce qui vous arrive, mais la façon dont vous y réagissez qui importe.',
     },
   ),
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'Her gÃ¼ne sanki son gÃ¼nÃ¼nmÃ¼ÅŸ gibi odaklan.',
+      'tr': 'Her güne sanki son gününmüş gibi odaklan.',
       'en': 'Focus on every day as if it were your last.',
-      'de': 'Konzentriere dich auf jeden Tag, als wÃ¤re es dein letzter.',
-      'es': 'ConcÃ©ntrate en cada dÃ­a como si fuera el Ãºltimo.',
-      'fr': 'Concentre-toi sur chaque jour comme si c''Ã©tait le dernier.',
+      'de': 'Konzentriere dich auf jeden Tag, als wäre es dein letzter.',
+      'es': 'Concéntrate en cada día como si fuera el último.',
+      'fr': 'Concentre-toi sur chaque jour comme si c''était le dernier.',
     },
   ),
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'Hangi limana yelken aÃ§tÄ±ÄŸÄ±nÄ± bilmeyen kapayana hiÃ§bir rÃ¼zgar yardÄ±m edemez.',
+      'tr': 'Hangi limana yelken açtığını bilmeyen kapayana hiçbir rüzgar yardım edemez.',
       'en': 'If one does not know to which port one is sailing, no wind is favorable.',
-      'de': 'Wenn man nicht weiÃŸ, welchen Hafen man ansteuert, ist kein Wind gÃ¼nstig.',
-      'es': 'Si uno no sabe a quÃ© puerto navega, ningÃºn viento es favorable.',
+      'de': 'Wenn man nicht weiß, welchen Hafen man ansteuert, ist kein Wind günstig.',
+      'es': 'Si uno no sabe a qué puerto navega, ningún viento es favorable.',
       'fr': 'Si l''on ne sait vers quel port on navigue, aucun vent n''est favorable.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Hedefine giden yolda rÃ¼zgardan deÄŸil, iradenden gÃ¼Ã§ al.',
+      'tr': 'Hedefine giden yolda rüzgardan değil, iradenden güç al.',
       'en': 'On the path to your goal, draw strength from your willpower, not the wind.',
-      'de': 'Auf dem Weg zu deinem Ziel schÃ¶pfe Kraft aus deinem Willen, nicht aus dem Wind.',
+      'de': 'Auf dem Weg zu deinem Ziel schöpfe Kraft aus deinem Willen, nicht aus dem Wind.',
       'es': 'En el camino hacia tu meta, saca fuerza de tu voluntad, no del viento.',
-      'fr': 'Sur le chemin de ton objectif, tire ta force de ta volontÃ©, pas du vent.',
+      'fr': 'Sur le chemin de ton objectif, tire ta force de ta volonté, pas du vent.',
     },
   ),
   Quote(
     author: 'Cicero',
     localizedText: {
-      'tr': 'Ã‡aba gÃ¶stermeden elde edilen zafer tatlÄ± deÄŸildir.',
+      'tr': 'Çaba göstermeden elde edilen zafer tatlı değildir.',
       'en': 'Victory attained without effort is not sweet.',
-      'de': 'Ein ohne Anstrengung errungener Sieg ist nicht sÃ¼ÃŸ.',
+      'de': 'Ein ohne Anstrengung errungener Sieg ist nicht süß.',
       'es': 'La victoria alcanzada sin esfuerzo no es dulce.',
       'fr': 'La victoire obtenue sans effort n''est pas douce.',
     },
@@ -1872,59 +1872,59 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Zihnini bir su gibi dingin tut, kararlarÄ±n kÄ±lÄ±Ã§ gibi keskin olsun.',
+      'tr': 'Zihnini bir su gibi dingin tut, kararların kılıç gibi keskin olsun.',
       'en': 'Keep your mind calm like water, let your decisions be sharp as a sword.',
       'de': 'Halte deinen Geist ruhig wie Wasser, lass deine Entscheidungen scharf wie ein Schwert sein.',
-      'es': 'MantÃ©n tu mente tranquila como el agua, deja que tus decisiones sean afiladas como una espada.',
-      'fr': 'Garde ton esprit calme comme l''eau, que tes dÃ©cisions soient tranchantes comme une Ã©pÃ©e.',
+      'es': 'Mantén tu mente tranquila como el agua, deja que tus decisiones sean afiladas como una espada.',
+      'fr': 'Garde ton esprit calme comme l''eau, que tes décisions soient tranchantes comme une épée.',
     },
   ),
   Quote(
     author: 'Sun Tzu',
     localizedText: {
-      'tr': 'Kendini ve dÃ¼ÅŸmanÄ±nÄ± tanÄ±rsan, yÃ¼z savaÅŸtan galip Ã§Ä±karsÄ±n.',
+      'tr': 'Kendini ve düşmanını tanırsan, yüz savaştan galip çıkarsın.',
       'en': 'If you know the enemy and know yourself, you need not fear the result of a hundred battles.',
-      'de': 'Wenn du den Feind kennst und dich selbst kennst, brauchst du das Ergebnis von hundert Schlachten nicht zu fÃ¼rchten.',
+      'de': 'Wenn du den Feind kennst und dich selbst kennst, brauchst du das Ergebnis von hundert Schlachten nicht zu fürchten.',
       'es': 'Si conoces al enemigo y te conoces a ti mismo, no debes temer el resultado de cien batallas.',
-      'fr': 'Si tu connais l''ennemi et que tu te connais toi-mÃªme, tu n''as pas Ã  craindre le rÃ©sultat de cent batailles.',
+      'fr': 'Si tu connais l''ennemi et que tu te connais toi-même, tu n''as pas à craindre le résultat de cent batailles.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'SavaÅŸÃ§Ä± pes etmez, sadece bir sonraki hamlesini planlar.',
+      'tr': 'Savaşçı pes etmez, sadece bir sonraki hamlesini planlar.',
       'en': 'A warrior never quits; they only plan their next move.',
-      'de': 'Ein Krieger gibt niemals auf; er plant nur seinen nÃ¤chsten Schritt.',
-      'es': 'Un guerrero nunca se rinde; solo planea su prÃ³ximo movimiento.',
+      'de': 'Ein Krieger gibt niemals auf; er plant nur seinen nächsten Schritt.',
+      'es': 'Un guerrero nunca se rinde; solo planea su próximo movimiento.',
       'fr': 'Un guerrier n''abandonne jamais ; il planifie simplement son prochain coup.',
     },
   ),
   Quote(
     author: 'Epiktetos',
     localizedText: {
-      'tr': 'Ã–zgÃ¼rlÃ¼k, arzularÄ±nÄ± kontrol edebilmektir.',
+      'tr': 'Özgürlük, arzularını kontrol edebilmektir.',
       'en': 'Freedom is the control of one''s desires.',
       'de': 'Freiheit ist die Kontrolle der eigenen Begierden.',
       'es': 'La libertad es el control de los propios deseos.',
-      'fr': 'La libertÃ© est le contrÃ´le de ses propres dÃ©sirs.',
+      'fr': 'La liberté est le contrôle de ses propres désirs.',
     },
   ),
   Quote(
     author: 'Marcus Aurelius',
     localizedText: {
-      'tr': 'Ruhun rengi, dÃ¼ÅŸÃ¼ncelerinin rengine bÃ¼rÃ¼nÃ¼r.',
+      'tr': 'Ruhun rengi, düşüncelerinin rengine bürünür.',
       'en': 'The soul becomes dyed with the color of its thoughts.',
       'de': 'Die Seele nimmt die Farbe ihrer Gedanken an.',
-      'es': 'El alma se tiÃ±e del color de sus pensamientos.',
-      'fr': 'L''Ã¢me se teinte de la couleur de ses pensÃ©es.',
+      'es': 'El alma se tiñe del color de sus pensamientos.',
+      'fr': 'L''âme se teinte de la couleur de ses pensées.',
     },
   ),
   Quote(
     author: 'Seneca',
     localizedText: {
-      'tr': 'YaÅŸam bÃ¼yÃ¼k bir mÃ¼cadeledir; asker gibi savaÅŸmalÄ±sÄ±n.',
+      'tr': 'Yaşam büyük bir mücadeledir; asker gibi savaşmalısın.',
       'en': 'Life is a battle; you must fight like a soldier.',
-      'de': 'Das Leben ist ein Kampf; du musst wie ein Soldat kÃ¤mpfen.',
+      'de': 'Das Leben ist ein Kampf; du musst wie ein Soldat kämpfen.',
       'es': 'La vida es una batalla; debes luchar como un soldado.',
       'fr': 'La vie est un combat ; tu dois te battre comme un soldat.',
     },
@@ -1932,9 +1932,9 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Bruce Lee',
     localizedText: {
-      'tr': 'SÃ¼reÃ§ten keyif al, odaklandÄ±ÄŸÄ±n ÅŸey geliÅŸimindir.',
+      'tr': 'Süreçten keyif al, odaklandığın şey gelişimindir.',
       'en': 'Enjoy the process; what you focus on is your growth.',
-      'de': 'GenieÃŸe den Prozess; worauf du dich konzentrierst, ist dein Wachstum.',
+      'de': 'Genieße den Prozess; worauf du dich konzentrierst, ist dein Wachstum.',
       'es': 'Disfruta el proceso; aquello en lo que te enfocas es tu crecimiento.',
       'fr': 'Profite du processus ; ce sur quoi tu te concentres est ta croissance.',
     },
@@ -1942,61 +1942,61 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'Theodore Roosevelt',
     localizedText: {
-      'tr': 'GÃ¶zlerin yÄ±ldÄ±zlarda olsun, ayaklarÄ±n ise yerde.',
+      'tr': 'Gözlerin yıldızlarda olsun, ayakların ise yerde.',
       'en': 'Keep your eyes on the stars, and your feet on the ground.',
-      'de': 'Halte deine Augen auf die Sterne gerichtet und deine FÃ¼ÃŸe auf den Boden.',
-      'es': 'MantÃ©n tus ojos en las estrellas y tus pies en la tierra.',
-      'fr': 'Garde les yeux sur les Ã©toiles et les pieds sur terre.',
+      'de': 'Halte deine Augen auf die Sterne gerichtet und deine Füße auf den Boden.',
+      'es': 'Mantén tus ojos en las estrellas y tus pies en la tierra.',
+      'fr': 'Garde les yeux sur les étoiles et les pieds sur terre.',
     },
   ),
   Quote(
     author: 'Winston Churchill',
     localizedText: {
-      'tr': 'UÃ§urtmalar rÃ¼zgar gÃ¼cÃ¼yle deÄŸil, rÃ¼zgara karÅŸÄ± yÃ¼kselir.',
+      'tr': 'Uçurtmalar rüzgar gücüyle değil, rüzgara karşı yükselir.',
       'en': 'Kites rise highest against the wind, not with it.',
-      'de': 'Drachen steigen gegen den Wind am hÃ¶chsten, nicht mit ihm.',
-      'es': 'Cometas se elevan mÃ¡s alto contra el viento, no con Ã©l.',
-      'fr': 'Les cerfs-volants s''Ã©lÃ¨vent le plus haut contre le vent, pas avec lui.',
+      'de': 'Drachen steigen gegen den Wind am höchsten, nicht mit ihm.',
+      'es': 'Cometas se elevan más alto contra el viento, no con él.',
+      'fr': 'Les cerfs-volants s''élèvent le plus haut contre le vent, pas avec lui.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Mazeretleri yok et, ÅŸampiyonlarÄ±n yolunu aÃ§.',
+      'tr': 'Mazeretleri yok et, şampiyonların yolunu aç.',
       'en': 'Destroy excuses, pave the way for champions.',
-      'de': 'ZerstÃ¶re Ausreden, ebne den Weg fÃ¼r Champions.',
+      'de': 'Zerstöre Ausreden, ebne den Weg für Champions.',
       'es': 'Destruye las excusas, abre el camino a los campeones.',
-      'fr': 'DÃ©truis les excuses, pave la voie aux champions.',
+      'fr': 'Détruis les excuses, pave la voie aux champions.',
     },
   ),
   Quote(
     author: 'Lao Tzu',
     localizedText: {
-      'tr': 'BaÅŸkalarÄ±na hÃ¼kmeden gÃ¼Ã§lÃ¼dÃ¼r, kendine hÃ¼kmeden ise yenilmez.',
+      'tr': 'Başkalarına hükmeden güçlüdür, kendine hükmeden ise yenilmez.',
       'en': 'He who controls others may be powerful, but he who has mastered himself is mightier still.',
-      'de': 'Wer andere beherrscht, mag mÃ¤chtig sein; wer sich selbst beherrscht, ist noch mÃ¤chtiger.',
-      'es': 'Quien controla a otros puede ser poderoso, pero quien se domina a sÃ­ mismo es aÃºn mÃ¡s fuerte.',
-      'fr': 'Celui qui maÃ®trise les autres est puissant ; celui qui se maÃ®trise lui-mÃªme est encore plus fort.',
+      'de': 'Wer andere beherrscht, mag mächtig sein; wer sich selbst beherrscht, ist noch mächtiger.',
+      'es': 'Quien controla a otros puede ser poderoso, pero quien se domina a sí mismo es aún más fuerte.',
+      'fr': 'Celui qui maîtrise les autres est puissant ; celui qui se maîtrise lui-même est encore plus fort.',
     },
   ),
   Quote(
     author: 'Miyamoto Musashi',
     localizedText: {
-      'tr': 'Bin gÃ¼n sÃ¼ren antrenman acemiliÄŸi giderir, ten bin gÃ¼n sÃ¼ren antrenman ustalÄ±ÄŸÄ± getirir.',
+      'tr': 'Bin gün süren antrenman acemiliği giderir, ten bin gün süren antrenman ustalığı getirir.',
       'en': 'A thousand days of practice to forge, ten thousand days of practice to refine.',
       'de': 'Tausend Tage Training zum Schmieden, zehntausend Tage Training zum Verfeinern.',
-      'es': 'Mil dÃ­as de prÃ¡ctica para forjar, diez mil dÃ­as de prÃ¡ctica para perfeccionar.',
+      'es': 'Mil días de práctica para forjar, diez mil días de práctica para perfeccionar.',
       'fr': 'Mille jours de pratique pour forger, dix mille jours de pratique pour affiner.',
     },
   ),
   Quote(
     author: 'PainToGain',
     localizedText: {
-      'tr': 'Zirveye giden yol disiplin taÅŸlarÄ±yla Ã¶rÃ¼lmÃ¼ÅŸtÃ¼r.',
+      'tr': 'Zirveye giden yol disiplin taşlarıyla örülmüştür.',
       'en': 'The road to the top is paved with stones of discipline.',
       'de': 'Der Weg nach oben ist mit Steinen der Disziplin gepflastert.',
-      'es': 'El camino hacia la cima estÃ¡ empedrado con piedras de disciplina.',
-      'fr': 'Le chemin vers le sommet est pavÃ© de pierres de discipline.',
+      'es': 'El camino hacia la cima está empedrado con piedras de disciplina.',
+      'fr': 'Le chemin vers le sommet est pavé de pierres de discipline.',
     },
   ),
 ];

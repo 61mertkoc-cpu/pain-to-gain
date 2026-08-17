@@ -24,6 +24,15 @@ class CalendarPageWidget extends StatefulWidget {
 }
 
 class _CalendarPageWidgetState extends State<CalendarPageWidget> {
+  String _getFormattedMonth(DateTime dt) {
+    final monthsTr = ['OCAK', 'ŞUBAT', 'MART', 'NİSAN', 'MAYIS', 'HAZİRAN', 'TEMMUZ', 'AĞUSTOS', 'EYLÜL', 'EKİM', 'KASIM', 'ARALIK'];
+    final monthsEn = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+    final idx = dt.month - 1;
+    final isTr = LocalizationManager.instance.currentLocale == 'tr';
+    final name = isTr ? monthsTr[idx] : monthsEn[idx];
+    return '$name ${dt.year}';
+  }
+
   late CalendarPageModel _model;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -185,16 +194,26 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
                               ),
                               SizedBox(height: 12.0),
 
-                              // Month selector with arrows (< Temmuz 2026 >)
+                              // Month selector with interactive arrows (< AĞUSTOS 2026 >)
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  Icon(
-                                    Icons.keyboard_arrow_left,
-                                    color: Color(0x88A68255),
-                                    size: 20.0,
+                                  InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        _model.selectedMonth = DateTime(_model.selectedMonth.year, _model.selectedMonth.month - 1, 1);
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_left,
+                                        color: Color(0xFFA68255),
+                                        size: 24.0,
+                                      ),
+                                    ),
                                   ),
-                                  SizedBox(width: 8.0),
+                                  SizedBox(width: 4.0),
                                   Icon(
                                     Icons.calendar_today_outlined,
                                     color: Color(0xFFA68255),
@@ -202,7 +221,7 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
                                   ),
                                   SizedBox(width: 6.0),
                                   Text(
-                                    LocalizationManager.instance.t('stats_month_label'),
+                                    _getFormattedMonth(_model.selectedMonth),
                                     style: GoogleFonts.inter(
                                       color: Color(0xFFF2EFE9),
                                       fontSize: 14.0,
@@ -210,11 +229,21 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
                                       letterSpacing: 1.0,
                                     ),
                                   ),
-                                  SizedBox(width: 8.0),
-                                  Icon(
-                                    Icons.keyboard_arrow_right,
-                                    color: Color(0x88A68255),
-                                    size: 20.0,
+                                  SizedBox(width: 4.0),
+                                  InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        _model.selectedMonth = DateTime(_model.selectedMonth.year, _model.selectedMonth.month + 1, 1);
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_right,
+                                        color: Color(0xFFA68255),
+                                        size: 24.0,
+                                      ),
+                                    ),
                                   ),
                                 ],
                               ),

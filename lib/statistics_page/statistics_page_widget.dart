@@ -24,6 +24,15 @@ class StatisticsPageWidget extends StatefulWidget {
 }
 
 class _StatisticsPageWidgetState extends State<StatisticsPageWidget> {
+  String _getFormattedMonth(DateTime dt) {
+    final monthsTr = ['OCAK', 'ŞUBAT', 'MART', 'NİSAN', 'MAYIS', 'HAZİRAN', 'TEMMUZ', 'AĞUSTOS', 'EYLÜL', 'EKİM', 'KASIM', 'ARALIK'];
+    final monthsEn = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
+    final idx = dt.month - 1;
+    final isTr = LocalizationManager.instance.currentLocale == 'tr';
+    final name = isTr ? monthsTr[idx] : monthsEn[idx];
+    return '$name ${dt.year}';
+  }
+
   late StatisticsPageModel _model;
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
@@ -178,50 +187,83 @@ class _StatisticsPageWidgetState extends State<StatisticsPageWidget> {
                               ),
                               SizedBox(height: 16.0),
 
-                              // Month selector (July 2026 dropdown triggers CalendarPage navigation)
-                              Center(
-                                child: InkWell(
-                                  onTap: () async {
-                                    context.pushNamed('CalendarPage');
-                                  },
-                                  child: Container(
-                                    width: 220.0,
-                                    height: 42.0,
-                                    decoration: BoxDecoration(
-                                      color: Color(0xCC0A0A0A),
-                                      borderRadius: BorderRadius.circular(6.0),
-                                      border: Border.all(
+                              // Month selector (with month switching arrows)
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        _model.selectedMonth = DateTime(_model.selectedMonth.year, _model.selectedMonth.month - 1, 1);
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_left,
                                         color: Color(0xFFA68255),
-                                        width: 1.0,
+                                        size: 24.0,
                                       ),
                                     ),
-                                    padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                    child: Row(
-                                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                                      children: [
-                                        Icon(
-                                          Icons.calendar_today_outlined,
+                                  ),
+                                  InkWell(
+                                    onTap: () async {
+                                      context.pushNamed('CalendarPage');
+                                    },
+                                    child: Container(
+                                      width: 190.0,
+                                      height: 42.0,
+                                      decoration: BoxDecoration(
+                                        color: Color(0xCC0A0A0A),
+                                        borderRadius: BorderRadius.circular(6.0),
+                                        border: Border.all(
                                           color: Color(0xFFA68255),
-                                          size: 18.0,
+                                          width: 1.0,
                                         ),
-                                        Text(
-                                          LocalizationManager.instance.t('stats_month_label'),
-                                          style: GoogleFonts.inter(
-                                            color: Color(0xFFF2EFE9),
-                                            fontSize: 14.0,
-                                            fontWeight: FontWeight.w600,
-                                            letterSpacing: 1.0,
+                                      ),
+                                      padding: EdgeInsets.symmetric(horizontal: 10.0),
+                                      child: Row(
+                                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                                        children: [
+                                          Icon(
+                                            Icons.calendar_today_outlined,
+                                            color: Color(0xFFA68255),
+                                            size: 16.0,
                                           ),
-                                        ),
-                                        Icon(
-                                          Icons.keyboard_arrow_down,
-                                          color: Color(0xFFA68255),
-                                          size: 20.0,
-                                        ),
-                                      ],
+                                          Text(
+                                            _getFormattedMonth(_model.selectedMonth),
+                                            style: GoogleFonts.inter(
+                                              color: Color(0xFFF2EFE9),
+                                              fontSize: 13.0,
+                                              fontWeight: FontWeight.w600,
+                                              letterSpacing: 0.5,
+                                            ),
+                                          ),
+                                          Icon(
+                                            Icons.keyboard_arrow_right,
+                                            color: Color(0xFFA68255),
+                                            size: 18.0,
+                                          ),
+                                        ],
+                                      ),
                                     ),
                                   ),
-                                ),
+                                  InkWell(
+                                    onTap: () {
+                                      setState(() {
+                                        _model.selectedMonth = DateTime(_model.selectedMonth.year, _model.selectedMonth.month + 1, 1);
+                                      });
+                                    },
+                                    child: Padding(
+                                      padding: EdgeInsets.all(8.0),
+                                      child: Icon(
+                                        Icons.keyboard_arrow_right,
+                                        color: Color(0xFFA68255),
+                                        size: 24.0,
+                                      ),
+                                    ),
+                                  ),
+                                ],
                               ),
                               SizedBox(height: 16.0),
 
