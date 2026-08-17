@@ -28,7 +28,7 @@ class _CalendarPageWidgetState extends State<CalendarPageWidget> {
     final monthsTr = ['OCAK', 'ŞUBAT', 'MART', 'NİSAN', 'MAYIS', 'HAZİRAN', 'TEMMUZ', 'AĞUSTOS', 'EYLÜL', 'EKİM', 'KASIM', 'ARALIK'];
     final monthsEn = ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL', 'MAY', 'JUNE', 'JULY', 'AUGUST', 'SEPTEMBER', 'OCTOBER', 'NOVEMBER', 'DECEMBER'];
     final idx = dt.month - 1;
-    final isTr = LocalizationManager.instance.currentLocale == 'tr';
+    final isTr = LocalizationManager.instance.locale == 'tr';
     final name = isTr ? monthsTr[idx] : monthsEn[idx];
     return '$name ${dt.year}';
   }

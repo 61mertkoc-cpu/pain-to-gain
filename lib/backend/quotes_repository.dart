@@ -459,7 +459,7 @@ const List<Quote> allQuotes = [
   Quote(
     author: 'David Goggins',
     localizedText: {
-      'tr': 'Zihnin pes ettiğini söylediğinde, aslında kapasitenin sadece %40'ındasın.\'ına ulaştığında, daha yeni başlıyorsun.',
+      'tr': 'Zihnin pes ettiğini söylediğinde, aslında kapasitenin sadece %40\'ındasın, daha yeni başlıyorsun.',
       'en': 'When your mind is telling you you\'re done, you\'re really only 40 percent done.',
       'de': 'Wenn dein Verstand dir sagt, du bist am Ende, hast du erst 40 Prozent erreicht.',
       'es': 'Cuando tu mente te dice que has terminado, en realidad solo has completado el 40 por ciento.',
