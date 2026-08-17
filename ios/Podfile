@@ -4,6 +4,9 @@ platform :ios, '14.0.0'
 # CocoaPods analytics sends network stats synchronously affecting flutter build latency.
 ENV['COCOAPODS_DISABLE_STATS'] = 'true'
 
+# Shared dependency at top level to prevent "Multiple commands produce GoogleUtilities.framework"
+pod 'GoogleUtilities'
+
 project 'Runner', {
   'Debug' => :debug,
   'Profile' => :release,
